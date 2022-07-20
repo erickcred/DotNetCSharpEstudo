@@ -1,0 +1,15 @@
+D:\Estudo\Console\EditorDeTextos\obj\Debug\net6.0\EditorDeTextos.csproj.AssemblyReference.cache
+D:\Estudo\Console\EditorDeTextos\obj\Debug\net6.0\EditorDeTextos.GeneratedMSBuildEditorConfig.editorconfig
+D:\Estudo\Console\EditorDeTextos\obj\Debug\net6.0\EditorDeTextos.AssemblyInfoInputs.cache
+D:\Estudo\Console\EditorDeTextos\obj\Debug\net6.0\EditorDeTextos.AssemblyInfo.cs
+D:\Estudo\Console\EditorDeTextos\obj\Debug\net6.0\EditorDeTextos.csproj.CoreCompileInputs.cache
+D:\Estudo\Console\EditorDeTextos\bin\Debug\net6.0\EditorDeTextos.exe
+D:\Estudo\Console\EditorDeTextos\bin\Debug\net6.0\EditorDeTextos.deps.json
+D:\Estudo\Console\EditorDeTextos\bin\Debug\net6.0\EditorDeTextos.runtimeconfig.json
+D:\Estudo\Console\EditorDeTextos\bin\Debug\net6.0\EditorDeTextos.dll
+D:\Estudo\Console\EditorDeTextos\bin\Debug\net6.0\EditorDeTextos.pdb
+D:\Estudo\Console\EditorDeTextos\obj\Debug\net6.0\EditorDeTextos.dll
+D:\Estudo\Console\EditorDeTextos\obj\Debug\net6.0\refint\EditorDeTextos.dll
+D:\Estudo\Console\EditorDeTextos\obj\Debug\net6.0\EditorDeTextos.pdb
+D:\Estudo\Console\EditorDeTextos\obj\Debug\net6.0\EditorDeTextos.genruntimeconfig.cache
+D:\Estudo\Console\EditorDeTextos\obj\Debug\net6.0\ref\EditorDeTextos.dll
