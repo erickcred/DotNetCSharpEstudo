@@ -13,7 +13,8 @@ namespace Strings
             // ComparacaoString();
             // StartsWithEndsWith();
             // StringEquals();
-            StringIndex();
+            // StringIndex();
+            MetodosAdicionais();
         }
 
         public static void StringGuid()
@@ -88,6 +89,21 @@ namespace Strings
             Console.WriteLine($"Primeira apresentação do (e): {texto.IndexOf("e")}");
             Console.WriteLine($"Ultima apresentação do (e): {texto.LastIndexOf("e")}");
             Console.WriteLine($"Selecionando o Segundo item da String {texto[1]}");
+        }
+
+        public static void MetodosAdicionais()
+        {
+            string texto = "Esse é um texto de exemplo";
+
+            Console.WriteLine($"Texto original \n{texto}");
+            Console.WriteLine();
+            Console.WriteLine($"--Convertendo texto todo para Maiusculo: \n{texto.ToUpper()}");
+            Console.WriteLine($"--Convertendo o texto todo para Minusculo: \n{texto.ToLower()}");
+            Console.WriteLine();
+            Console.WriteLine($"--Inserindo item dentro do texto: \n{texto.Insert(9, " OLA")}");
+            Console.WriteLine();
+            Console.WriteLine($"--Removendo item do texto: \n{texto.Remove(0, 4)}");
+            Console.WriteLine($"Tamanho do texto: {texto.Length}");
         }
     }
 }
