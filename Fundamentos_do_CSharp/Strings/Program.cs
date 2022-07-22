@@ -14,7 +14,8 @@ namespace Strings
             // StartsWithEndsWith();
             // StringEquals();
             // StringIndex();
-            MetodosAdicionais();
+            // MetodosAdicionais();
+            ManipulandoStrings();
         }
 
         public static void StringGuid()
@@ -102,8 +103,18 @@ namespace Strings
             Console.WriteLine();
             Console.WriteLine($"--Inserindo item dentro do texto: \n{texto.Insert(9, " OLA")}");
             Console.WriteLine();
-            Console.WriteLine($"--Removendo item do texto: \n{texto.Remove(0, 4)}");
+            Console.WriteLine($"--Removendo item do texto: \n{texto.Remove(9, 0)}");
             Console.WriteLine($"Tamanho do texto: {texto.Length}");
+        }
+
+        public static void ManipulandoStrings()
+        {
+            string texto  = "Esse é um texto de exemplo";
+
+            Console.WriteLine($"Texto original \n{texto}");
+            Console.WriteLine();
+            Console.WriteLine($"Trocando um ou mais itens de um texto: \n{texto.Replace(" ", "_")}");
+
         }
     }
 }

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Estudo\\DotNetCSharpEstudo\\Fundamentos_do_CSharp\\Strings\\Strings.csproj",
+      "projectUniqueName": "C:\\Estudo\\DotNetCSharpEstudo\\Fundamentos_do_CSharp\\Strings\\Strings.csproj",
       "projectName": "Strings",
-      "projectPath": "D:\\Estudo\\DotNetCSharpEstudo\\Fundamentos_do_CSharp\\Strings\\Strings.csproj",
+      "projectPath": "C:\\Estudo\\DotNetCSharpEstudo\\Fundamentos_do_CSharp\\Strings\\Strings.csproj",
       "packagesPath": "C:\\Users\\erick\\.nuget\\packages\\",
-      "outputPath": "D:\\Estudo\\DotNetCSharpEstudo\\Fundamentos_do_CSharp\\Strings\\obj\\",
+      "outputPath": "C:\\Estudo\\DotNetCSharpEstudo\\Fundamentos_do_CSharp\\Strings\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\erick\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
