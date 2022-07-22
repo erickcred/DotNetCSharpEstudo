@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Rcm8X/Ef5CIlpWTmpcR4s5OD8BflIT2+qxEO0XL0Z40+r6BASB0BizEOK+PWZalnRY4dEsmjPKBl5nRSQKlGcA==",
+  "dgSpecHash": "OGUd3p4S26NQVRFI+Qp7dEzZojiiNhMpC0GuUSYIbsDRjG0cqP6Tr0WxqpgrusGXSgUHJfRlJp+YZo38Dp9USg==",
   "success": true,
-  "projectFilePath": "D:\\Estudo\\Console\\Strings\\Strings.csproj",
+  "projectFilePath": "D:\\Estudo\\DotNetCSharpEstudo\\Fundamentos_do_CSharp\\Strings\\Strings.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
