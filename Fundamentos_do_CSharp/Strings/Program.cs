@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace Strings
 {
@@ -15,7 +16,8 @@ namespace Strings
             // StringEquals();
             // StringIndex();
             // MetodosAdicionais();
-            ManipulandoStrings();
+            // ManipulandoStrings();
+            IniciandoComStringBuilder();
         }
 
         public static void StringGuid()
@@ -109,12 +111,27 @@ namespace Strings
 
         public static void ManipulandoStrings()
         {
-            string texto  = "Esse é um texto de exemplo";
+            string texto  = " Esse é um texto de exemplo ";
 
             Console.WriteLine($"Texto original \n{texto}");
             Console.WriteLine();
             Console.WriteLine($"Trocando um ou mais itens de um texto: \n{texto.Replace(" ", "_")}");
+            Console.WriteLine($"Trocando um outro item do texto: \n{texto.Replace("Esse", "Isso")}");
+            Console.WriteLine($"Dividindo texto por um caractere: \n{texto.Split(" ")[0]}");
+            Console.WriteLine($"Selecitonando item inded + quantidade: \n{texto.Substring(0, 4)}");
+            Console.WriteLine($"Removendo espaços no inicio e no final da String: \n{texto.Trim()}");
+        }
 
+        public static void IniciandoComStringBuilder()
+        {
+            string texto = "Esse é um texto texto";
+
+            StringBuilder texto2 = new StringBuilder();
+
+            texto2.Append(texto);
+            texto2.Append(" Ola");
+
+            Console.WriteLine(texto2);
         }
     }
 }
