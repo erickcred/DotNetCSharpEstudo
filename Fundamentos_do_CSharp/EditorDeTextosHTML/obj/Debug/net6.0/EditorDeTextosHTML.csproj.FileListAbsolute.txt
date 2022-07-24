@@ -1,0 +1,15 @@
+C:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\EditorDeTextosHTML\bin\Debug\net6.0\EditorDeTextosHTML.exe
+C:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\EditorDeTextosHTML\bin\Debug\net6.0\EditorDeTextosHTML.deps.json
+C:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\EditorDeTextosHTML\bin\Debug\net6.0\EditorDeTextosHTML.runtimeconfig.json
+C:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\EditorDeTextosHTML\bin\Debug\net6.0\EditorDeTextosHTML.dll
+C:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\EditorDeTextosHTML\bin\Debug\net6.0\EditorDeTextosHTML.pdb
+C:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\EditorDeTextosHTML\obj\Debug\net6.0\EditorDeTextosHTML.csproj.AssemblyReference.cache
+C:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\EditorDeTextosHTML\obj\Debug\net6.0\EditorDeTextosHTML.GeneratedMSBuildEditorConfig.editorconfig
+C:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\EditorDeTextosHTML\obj\Debug\net6.0\EditorDeTextosHTML.AssemblyInfoInputs.cache
+C:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\EditorDeTextosHTML\obj\Debug\net6.0\EditorDeTextosHTML.AssemblyInfo.cs
+C:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\EditorDeTextosHTML\obj\Debug\net6.0\EditorDeTextosHTML.csproj.CoreCompileInputs.cache
+C:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\EditorDeTextosHTML\obj\Debug\net6.0\EditorDeTextosHTML.dll
+C:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\EditorDeTextosHTML\obj\Debug\net6.0\refint\EditorDeTextosHTML.dll
+C:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\EditorDeTextosHTML\obj\Debug\net6.0\EditorDeTextosHTML.pdb
+C:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\EditorDeTextosHTML\obj\Debug\net6.0\EditorDeTextosHTML.genruntimeconfig.cache
+C:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\EditorDeTextosHTML\obj\Debug\net6.0\ref\EditorDeTextosHTML.dll
