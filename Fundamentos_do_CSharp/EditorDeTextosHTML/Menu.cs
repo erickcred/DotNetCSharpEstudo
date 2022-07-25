@@ -85,9 +85,15 @@ namespace EditorDeTextoHTML
                         Editor.Show();
                         break;
                     case 2: 
-                        Console.WriteLine("Visualizar arquivo");
+                        Viewer.Show();
                         break;
-                    case 0: System.Environment.Exit(0); break;
+                    case 0:
+                        Console.SetCursorPosition(3, 10);
+                        Console.WriteLine("Finalizado o programa.");
+                        Thread.Sleep(5000);
+                        Console.Clear();
+                        System.Environment.Exit(0);
+                        break;
                     default: 
                         Console.ForegroundColor = ConsoleColor.DarkRed;
                         Console.SetCursorPosition(3, 10);
