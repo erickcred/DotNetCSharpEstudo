@@ -1,0 +1,15 @@
+D:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\Datas\bin\Debug\net6.0\Datas.exe
+D:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\Datas\bin\Debug\net6.0\Datas.deps.json
+D:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\Datas\bin\Debug\net6.0\Datas.runtimeconfig.json
+D:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\Datas\bin\Debug\net6.0\Datas.dll
+D:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\Datas\bin\Debug\net6.0\Datas.pdb
+D:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\Datas\obj\Debug\net6.0\Datas.csproj.AssemblyReference.cache
+D:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\Datas\obj\Debug\net6.0\Datas.GeneratedMSBuildEditorConfig.editorconfig
+D:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\Datas\obj\Debug\net6.0\Datas.AssemblyInfoInputs.cache
+D:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\Datas\obj\Debug\net6.0\Datas.AssemblyInfo.cs
+D:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\Datas\obj\Debug\net6.0\Datas.csproj.CoreCompileInputs.cache
+D:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\Datas\obj\Debug\net6.0\Datas.dll
+D:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\Datas\obj\Debug\net6.0\refint\Datas.dll
+D:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\Datas\obj\Debug\net6.0\Datas.pdb
+D:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\Datas\obj\Debug\net6.0\Datas.genruntimeconfig.cache
+D:\Estudo\DotNetCSharpEstudo\Fundamentos_do_CSharp\Datas\obj\Debug\net6.0\ref\Datas.dll
