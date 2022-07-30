@@ -10,7 +10,10 @@ namespace Datas
             Console.Clear();
 
             // StartDate();
-            DateFormat();
+            // DateFormat();
+            // AdicionandoValores();
+            // ComparandoData();
+            CulturaDeData();
             
         }
 
@@ -39,9 +42,39 @@ namespace Datas
             string ano = String.Format("{0:yyyy}", now);
             string diaEMes = String.Format("{0:M}", now);
 
-            Console.WriteLine(mesestenco);
-            Console.WriteLine(ano);
-            Console.WriteLine(diaEMes);
+            Console.WriteLine($"Mostrando mês extenço e ano: {mesestenco}");
+            Console.WriteLine($"Mostrando ano: {ano}");
+            Console.WriteLine($"Mostrando dia e mês extenço: {diaEMes}");
+            Console.WriteLine("Mostrando dia mês ano: " + String.Format("{0:dd/MM/yyyy}", now));
         }
+
+        public static void AdicionandoValores()
+        {
+            DateTime data = DateTime.Now;
+            Console.WriteLine($"Data horiginal: {data}");
+
+            Console.WriteLine($"Adicionando uma Hora: {data.AddHours(1)}");
+            Console.WriteLine($"Adicionando dois dias: {data.AddDays(2)}");
+            Console.WriteLine($"Adicionando um mês: {data.AddMonths(1)}");
+        }
+
+        public static void ComparandoData()
+        {
+            DateTime data = DateTime.Now;
+
+            if (data.Date == DateTime.Now.Date)
+                Console.WriteLine("Eh");
+            else
+                Console.WriteLine("Não eh");
+
+            if (data.Date < Convert.ToDateTime("10/10/2022"))
+                Console.WriteLine($"{data} eh menor que 10/10/2022");
+        }
+
+        public static void CulturaDeData()
+        {
+
+        }
+
     }
 }
