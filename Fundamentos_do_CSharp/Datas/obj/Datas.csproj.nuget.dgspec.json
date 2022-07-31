@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Estudo\\DotNetCSharpEstudo\\Fundamentos_do_CSharp\\Datas\\Datas.csproj": {}
+    "C:\\Estudo\\DotNetCSharpEstudo\\Fundamentos_do_CSharp\\Datas\\Datas.csproj": {}
   },
   "projects": {
-    "D:\\Estudo\\DotNetCSharpEstudo\\Fundamentos_do_CSharp\\Datas\\Datas.csproj": {
+    "C:\\Estudo\\DotNetCSharpEstudo\\Fundamentos_do_CSharp\\Datas\\Datas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Estudo\\DotNetCSharpEstudo\\Fundamentos_do_CSharp\\Datas\\Datas.csproj",
+        "projectUniqueName": "C:\\Estudo\\DotNetCSharpEstudo\\Fundamentos_do_CSharp\\Datas\\Datas.csproj",
         "projectName": "Datas",
-        "projectPath": "D:\\Estudo\\DotNetCSharpEstudo\\Fundamentos_do_CSharp\\Datas\\Datas.csproj",
+        "projectPath": "C:\\Estudo\\DotNetCSharpEstudo\\Fundamentos_do_CSharp\\Datas\\Datas.csproj",
         "packagesPath": "C:\\Users\\erick\\.nuget\\packages\\",
-        "outputPath": "D:\\Estudo\\DotNetCSharpEstudo\\Fundamentos_do_CSharp\\Datas\\obj\\",
+        "outputPath": "C:\\Estudo\\DotNetCSharpEstudo\\Fundamentos_do_CSharp\\Datas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\erick\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

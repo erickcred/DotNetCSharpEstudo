@@ -13,8 +13,12 @@ namespace Datas
             // DateFormat();
             // AdicionandoValores();
             // ComparandoData();
-            CulturaDeData();
-            
+            // CulturaDeData();
+            // TimeZones();
+            TimeSpans();
+            QuantidadeDeDiasDoMes();
+
+            Console.WriteLine($"\nEh final de semana: {FinalDeSemana(DateTime.Now.DayOfWeek)}");            
         }
 
         public static void StartDate()
@@ -73,7 +77,84 @@ namespace Datas
 
         public static void CulturaDeData()
         {
+            DateTime data = DateTime.Now;
 
+            Console.WriteLine("Apresentação de datas: (CultureInfo):");
+            CultureInfo ptBr = new CultureInfo("pt-BR");
+            CultureInfo ptPt = new CultureInfo("pt-PT");
+            CultureInfo enUs = new CultureInfo("en-US");
+            CultureInfo enCa = new CultureInfo("en-CA");
+            CultureInfo deDe = new CultureInfo("de-DE");
+            CultureInfo atual = CultureInfo.CurrentCulture;
+
+            Console.WriteLine($"Português Brasil: {data.ToString(ptBr)}");
+            Console.WriteLine($"Português Potugual: {data.ToString(ptPt)}");
+            Console.WriteLine($"Inglês Esdos Unidos: {data.ToString(enUs)}");
+            Console.WriteLine($"Inglês Canada: {data.ToString(enUs)}");
+            Console.WriteLine($"Inglês Dinamarca: {string.Format("{0:G}", data.ToString(deDe))}");
+        }
+
+        public static void TimeZones()
+        {
+            DateTime utcDate = DateTime.UtcNow;
+
+            Console.WriteLine($"Datado Servidor: {DateTime.Now}");
+            Console.WriteLine($"Hora universal: {utcDate}");
+            Console.WriteLine($"Data local: {utcDate.ToLocalTime()}");
+
+            Console.WriteLine("\nTimezones:");
+            TimeZoneInfo timezoneAustralia = TimeZoneInfo.FindSystemTimeZoneById("Pacific/Auckland");
+            Console.WriteLine(timezoneAustralia);
+
+            DateTime horaAustralia = TimeZoneInfo.ConvertTimeFromUtc(utcDate, timezoneAustralia);
+            Console.WriteLine($"Australia: {horaAustralia}");
+
+            Console.WriteLine("\nListando Timezones");
+            var timezones = TimeZoneInfo.GetSystemTimeZones();
+            foreach (var timezone in timezones)
+            {
+                Console.WriteLine($@"{timezone.Id}
+                 {timezone}
+                 {TimeZoneInfo.ConvertTimeFromUtc(utcDate, timezone)}");
+                Console.WriteLine("----");
+            }
+
+        }
+
+        public static void TimeSpans()
+        {
+            TimeSpan timeSpan = new TimeSpan();
+            Console.WriteLine(timeSpan); // assim ele sempra mostrará 00:00:00
+
+            TimeSpan timeSpan1 =  new TimeSpan(1); // Nano segundos
+            Console.WriteLine($"Nano segundos: {timeSpan1}");
+
+            TimeSpan timeSpanHoraMinutoSegundo = new TimeSpan(5, 12, 8);
+            Console.WriteLine($"Hora Minuto Segundo: {timeSpanHoraMinutoSegundo}");
+
+            TimeSpan timeSpanDiaHoraMinutoSegundo = new TimeSpan(3, 5, 50, 10);
+            Console.WriteLine($"Dia Hora Minuto Segundo: {timeSpanDiaHoraMinutoSegundo}");
+
+            TimeSpan timeSpanDiaHoraMinutoSegundoMilisegundo = new TimeSpan(15, 12, 55, 8, 100);
+            Console.WriteLine($"Dia Hora Minuto Segundo Milisegundo: {timeSpanDiaHoraMinutoSegundoMilisegundo}");
+
+            Console.WriteLine("");
+            Console.WriteLine($"Hms - Dhms: {timeSpanHoraMinutoSegundo - timeSpanDiaHoraMinutoSegundo}");
+            Console.WriteLine($"Dias: {timeSpanDiaHoraMinutoSegundo.Days}");
+            Console.WriteLine($"Adicionando horas: {timeSpanDiaHoraMinutoSegundo.Add(new TimeSpan(12, 0, 0))}");
+
+
+        }
+
+        public static void QuantidadeDeDiasDoMes()
+        {
+            Console.WriteLine("\nVer a quantidade de dias que um mes tem:");
+            Console.WriteLine($"08/2022 tem {DateTime.DaysInMonth(2022, 8)} dias");
+        }
+        
+        public static bool FinalDeSemana(DayOfWeek today)
+        {
+            return today == DayOfWeek.Saturday || today == DayOfWeek.Sunday;
         }
 
     }
