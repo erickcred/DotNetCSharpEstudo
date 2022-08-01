@@ -1,0 +1,15 @@
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\Fundamentos\bin\Debug\net6.0\Fundamentos.exe
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\Fundamentos\bin\Debug\net6.0\Fundamentos.deps.json
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\Fundamentos\bin\Debug\net6.0\Fundamentos.runtimeconfig.json
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\Fundamentos\bin\Debug\net6.0\Fundamentos.dll
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\Fundamentos\bin\Debug\net6.0\Fundamentos.pdb
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\Fundamentos\obj\Debug\net6.0\Fundamentos.csproj.AssemblyReference.cache
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\Fundamentos\obj\Debug\net6.0\Fundamentos.GeneratedMSBuildEditorConfig.editorconfig
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\Fundamentos\obj\Debug\net6.0\Fundamentos.AssemblyInfoInputs.cache
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\Fundamentos\obj\Debug\net6.0\Fundamentos.AssemblyInfo.cs
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\Fundamentos\obj\Debug\net6.0\Fundamentos.csproj.CoreCompileInputs.cache
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\Fundamentos\obj\Debug\net6.0\Fundamentos.dll
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\Fundamentos\obj\Debug\net6.0\refint\Fundamentos.dll
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\Fundamentos\obj\Debug\net6.0\Fundamentos.pdb
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\Fundamentos\obj\Debug\net6.0\Fundamentos.genruntimeconfig.cache
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\Fundamentos\obj\Debug\net6.0\ref\Fundamentos.dll
