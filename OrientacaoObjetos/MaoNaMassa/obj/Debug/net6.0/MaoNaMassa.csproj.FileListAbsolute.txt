@@ -1,0 +1,15 @@
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\MaoNaMassa\bin\Debug\net6.0\MaoNaMassa.exe
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\MaoNaMassa\bin\Debug\net6.0\MaoNaMassa.deps.json
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\MaoNaMassa\bin\Debug\net6.0\MaoNaMassa.runtimeconfig.json
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\MaoNaMassa\bin\Debug\net6.0\MaoNaMassa.dll
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\MaoNaMassa\bin\Debug\net6.0\MaoNaMassa.pdb
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\MaoNaMassa\obj\Debug\net6.0\MaoNaMassa.csproj.AssemblyReference.cache
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\MaoNaMassa\obj\Debug\net6.0\MaoNaMassa.GeneratedMSBuildEditorConfig.editorconfig
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\MaoNaMassa\obj\Debug\net6.0\MaoNaMassa.AssemblyInfoInputs.cache
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\MaoNaMassa\obj\Debug\net6.0\MaoNaMassa.AssemblyInfo.cs
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\MaoNaMassa\obj\Debug\net6.0\MaoNaMassa.csproj.CoreCompileInputs.cache
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\MaoNaMassa\obj\Debug\net6.0\MaoNaMassa.dll
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\MaoNaMassa\obj\Debug\net6.0\refint\MaoNaMassa.dll
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\MaoNaMassa\obj\Debug\net6.0\MaoNaMassa.pdb
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\MaoNaMassa\obj\Debug\net6.0\MaoNaMassa.genruntimeconfig.cache
+D:\Estudo\DotNetCSharpEstudo\OrientacaoObjetos\MaoNaMassa\obj\Debug\net6.0\ref\MaoNaMassa.dll
