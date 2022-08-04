@@ -59,4 +59,91 @@ FROM
 WHERE
     -- [CategoriaId] = 1 OR
     [CategoriaId] IS NOT NULL
+ORDER BY
+    [Nome]
+GO
+
+--Tota de Categorias
+SELECT 
+    COUNT(*) AS [Total de Categorias]
+FROM
+    [Categoria]
+GO
+
+--Total de cursos por Categoria
+SELECT
+    [Categoria].[Id],
+    [Categoria].[Nome],
+    COUNT([Curso].[Id]) AS [Total de Cursos]
+FROM
+    [Categoria]
+    INNER JOIN [Curso] ON [Curso].[CategoriaId] = [Categoria].[Id]
+GROUP BY
+    [Categoria].[Id],
+    [Categoria].[Nome]
+GO
+
+--Menor Id em Curso
+SELECT TOP 100
+    MIN([Id]) AS [Primeiro Id de Curso]
+FROM
+    [Curso]
+GO
+
+--Maior Id em Curso
+SELECT TOP 100
+    MAX([Id]) AS [Ultimo Id de Curso]
+FROM
+    [Curso]
+GO
+
+-- Update
+-- BEGIN TRANSACTION
+    UPDATE 
+        [Curso]
+    SET 
+        [Nome] = 'Sintax Básica SqlServe'
+    WHERE
+        [Curso].[Id] = 4
+GO
+-- ROLLBACK
+SELECT * FROM vwCurso
+
+-- Delete
+DELETE FROM 
+    [Curso]
+WHERE
+    [Id] = 4
+GO
+
+-- Nesse caso vai dar erro pois tem um referentecia de Chave Estrageira
+DELETE FROM
+    [Categoria]
+WHERE
+    [Id] = 4
+GO
+
+--Like
+SELECT TOP 100
+    *
+FROM
+    [Curso]
+WHERE
+    [Nome] LIKE '%s' -- Termina com 
+GO
+
+SELECT TOP 100
+    *
+FROM
+    [Curso]
+WHERE
+    [Nome] LIKE 'v%' -- Começa com 
+GO
+
+SELECT TOP 100
+    *
+FROM
+    [Curso]
+WHERE
+    [Nome] LIKE '%ia%' -- Contem 
 GO
