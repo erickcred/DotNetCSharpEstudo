@@ -147,3 +147,90 @@ FROM
 WHERE
     [Nome] LIKE '%ia%' -- Contem 
 GO
+
+-- IN / BETWEEN
+SELECT TOP 100
+    *
+FROM
+    [Curso]
+WHERE 
+    [Id] IN (1, 2, 5)
+GO
+
+SELECT TOP 100
+    *
+FROM
+    [Curso]
+WHERE
+    [Id] BETWEEN 2 AND 5
+GO
+
+-- INNET JOIN - pega somente os Cursos que tem categoria
+SELECT TOP 100
+    [Curso].[Id],
+    [Curso].[Nome],
+    [Categoria].[Nome] AS [Categoria]
+FROM
+    [Curso]
+    INNER JOIN [Categoria] ON [Categoria].[Id] = [Curso].[CategoriaId]
+GO
+
+-- LEFT JOIN -> pega todos os itens da primeira tabela nesse caso ([Curso]) mesmo o JOIN sendo (null)
+SELECT TOP 100
+    [Curso].[Id],
+    [Curso].[Nome],
+    [Categoria].[Nome] AS [Categoria]
+FROM
+    [Curso]
+    LEFT JOIN [Categoria] ON [Categoria].[Id] = [Curso].[CategoriaId]
+GO
+
+-- RIGHT JOIN -> pega todod os intens o JOIN mesmo a não tendo informações na primeira tabela(null)
+SELECT TOP 100
+    [Curso].[Id],
+    [Curso].[Nome],
+    [Categoria].[Nome] AS [Categoria]
+FROM
+    [Curso]
+    RIGHT JOIN [Categoria] ON [Categoria].[Id] = [Curso].[CategoriaId]
+GO
+
+-- FULL JOIN
+SELECT TOP 100
+    [Curso].[Id],
+    [Curso].[Nome],
+    [Categoria].[Nome] AS [Categoria]
+FROM
+    [Curso]
+    FULL JOIN [Categoria] ON [Categoria].[Id] = [Curso].[CategoriaId]
+GO
+
+-- UNION
+SELECT TOP 100
+    [Curso].[Id],
+    [Curso].[Nome]
+FROM
+    [Curso]
+UNION
+SELECT TOP 100
+    [Categoria].[Id],
+    [Categoria].[Nome]
+from
+    [Categoria]
+GO
+
+-- HAVING
+SELECT TOP 100
+    [Categoria].[Id],
+    [Categoria].[Nome],
+    COUNT([Curso].[CategoriaId]) AS [Cursos]
+FROM
+    [Categoria]
+    INNER JOIN [Curso] ON [Curso].[CategoriaId] = [Categoria].[Id]
+GROUP BY
+    [Categoria].[Id],
+    [Categoria].[Nome],
+    [Curso].[CategoriaId]
+HAVING
+    COUNT([Curso].[CategoriaId]) > 1
+
