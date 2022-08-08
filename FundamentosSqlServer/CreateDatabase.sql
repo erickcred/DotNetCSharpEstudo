@@ -233,4 +233,46 @@ GROUP BY
     [Curso].[CategoriaId]
 HAVING
     COUNT([Curso].[CategoriaId]) > 1
+GO
 
+CREATE OR ALTER VIEW vwContagemDeCursosPorCategoria AS
+    SELECT TOP 100
+        [Categoria].[Id],
+        [Categoria].[Nome],
+        COUNT([Curso].[CategoriaId]) AS [Cursos]
+    FROM
+        [Categoria]
+        INNER JOIN [Curso] ON [Curso].[CategoriaId] = [Categoria].[Id]
+    WHERE
+        [Categoria].[Id] = 1
+    GROUP BY
+        [Categoria].[Id],
+        [Categoria].[Nome]
+GO
+SELECT * FROM vwContagemDeCursosPorCategoria
+
+-- Stored Procedures
+--DROP PROCEDURE [spListCursos]
+CREATE OR ALTER PROCEDURE [spListaCursos] AS
+    SELECT TOP 100
+        [Curso].[Id],
+        [Curso].[Nome],
+        [Categoria].[Nome] AS [Categoria]
+    FROM
+        [Curso]
+        INNER JOIN [Categoria] On [Categoria].[Id] = [Curso].[CategoriaId]
+GO
+
+
+CREATE OR ALTER PROC [spListaCategoria] 
+    @Id INT
+AS
+    SELECT TOP 100
+        [Categoria].[Id],
+        [Categoria].[Nome]
+    FROM
+        [Categoria]
+    WHERE
+        [Categoria].[Id] = @Id
+GO
+EXEC [spListaCategoria] 5
