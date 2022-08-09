@@ -55,6 +55,13 @@ GO
 --     ('5d8cf396-e717-9a02-2443-021b00000000', 'cc8cf1b7-7671-4595-a519-610e2a74b167', 50, 0, GETDATE(), NULL),
 --     ('5c349848-e717-9a7d-1241-0e6500000000', '7ba36361-3f24-4c21-9a24-915674037e71', 10, 1, GETDATE(), NULL)
 -- GO
+-- UPDATE
+--     [StudentCourse]
+-- SET
+--     [LastUpdateDate] = '2022-20-07'
+-- WHERE
+--     [StudentCourse].[StudentId] = 'cc8cf1b7-7671-4595-a519-610e2a74b167'
+-- GO
 
 CREATE OR ALTER VIEW vwStudentsProgress AS
     SELECT TOP 100
@@ -68,12 +75,16 @@ CREATE OR ALTER VIEW vwStudentsProgress AS
         INNER JOIN [Student] ON [Student].[Id] = [StudentCourse].[StudentId]
 GO
 
-
-DECLARE @StudentId UNIQUEIDENTIFIER = '7ba36361-3f24-4c21-9a24-915674037e71'
+-- Progreasso do aluno 
+CREATE OR ALTER PROC [spStudentProgress] (
+    @StudentId UNIQUEIDENTIFIER
+)
+AS
 SELECT TOP 100
     [StudentCourse].[StartDate],
-    [Student].[Name],
-    [Course].[Title],
+    [StudentCourse].[LastUpdateDate] AS [Last Access],
+    [Student].[Name] AS [Student],
+    [Course].[Title] AS [Course],
     [StudentCourse].[Progress]
 FROM
     [StudentCourse]
@@ -84,3 +95,36 @@ WHERE
     AND [StudentCourse].[Progress] < 100
     AND [StudentCourse].[Progress] > 0
 GO
+EXEC [spStudentProgress] '7ba36361-3f24-4c21-9a24-915674037e71'
+
+-- Listando cursos mesmo sem alunos
+SELECT TOP 100
+    [Student].[Name] AS [Student],
+    [Course].[Title] AS [Course],
+    [StudentCourse].[Progress] AS [Progress],
+    [StudentCourse].[LastUpdateDate] AS [Las Access]
+FROM
+    [Course]
+    LEFT JOIN [StudentCourse] ON [StudentCourse].[CourseId] = [Course].[Id]
+    LEFT JOIN [Student] ON [Student].[Id] = [StudentCourse].[StudentId]
+GO
+
+
+-- Excluindo conta do aluno
+CREATE OR ALTER PROCEDURE [spDeleteStudent] (
+    @StudentId UNIQUEIDENTIFIER
+)
+AS
+-- DECLARE @StudentId UNIQUEIDENTIFIER = '7ba36361-3f24-4c21-9a24-915674037e71'
+BEGIN TRANSACTION
+    DELETE FROM
+        [StudentCourse]
+    WHERE
+        [StudentId] = @StudentId
+    DELETE FROM
+        [Student]
+    WHERE
+        [Id] = @StudentId
+COMMIT
+GO
+EXEC [spDeleteStudent] '7ba36361-3f24-4c21-9a24-915674037e71'
