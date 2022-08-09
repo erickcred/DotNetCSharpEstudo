@@ -107,3 +107,11 @@ CREATE TABLE [StudentCourse] (
     CONSTRAINT [FK_StudentCourse_StudentId] FOREIGN KEY([StudentId]) REFERENCES [Student]([Id]) ON DELETE NO ACTION
 );
 GO
+
+USE [master];
+DECLARE @kill varchar(8000) = '';
+SELECT @kill = @kill + 'kill ' + CONVERT(varchar(5), session_id)
+FROM sys.dm_exec_sessions
+WHERE database_id = db_id('Course')
+EXEC(@kill);
+DROP DATABASE [Course]

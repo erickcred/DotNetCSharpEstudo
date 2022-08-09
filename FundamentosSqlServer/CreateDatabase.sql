@@ -250,6 +250,7 @@ CREATE OR ALTER VIEW vwContagemDeCursosPorCategoria AS
         [Categoria].[Nome]
 GO
 SELECT * FROM vwContagemDeCursosPorCategoria
+GO
 
 -- Stored Procedures
 --DROP PROCEDURE [spListCursos]
