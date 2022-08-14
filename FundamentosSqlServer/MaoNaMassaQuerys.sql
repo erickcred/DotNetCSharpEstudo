@@ -43,6 +43,8 @@ GO
 SELECT * FROM [StudentCourse]
 GO
 
+select NEWID()
+
 -- INSERT INTO
 --     [Student] ([Id], [Name], [Email], [Document], [Phone], [Birthdate], [CreateDate])
 -- VALUES
@@ -128,3 +130,36 @@ BEGIN TRANSACTION
 COMMIT
 GO
 EXEC [spDeleteStudent] '7ba36361-3f24-4c21-9a24-915674037e71'
+
+select * from [Category]
+GO
+
+CREATE OR ALTER PROC [spGetCourseByCategory]
+    @Categoryid UNIQUEIDENTIFIER
+AS
+    SELECT * FROM [Course] WHERE [CategoryId] = @Categoryid
+GO
+
+EXEC [spGetCourseByCategory] 'af3407aa-11ae-4621-a2ef-2028b85507c4'GO
+
+
+CREATE OR ALTER VIEW [vwListCategories] AS
+    SELECT
+        *
+    FROM
+        [Category]
+GO
+SELECT * FROM [vwListCategories]
+
+
+
+
+
+
+SELECT
+    *
+FROM
+    [Career]
+    INNER JOIN [CareerItem] ON [CareerItem].[CareerId] = [Career].[Id]
+WHERE
+    [Career].[Title] LIKE '%Front%'
