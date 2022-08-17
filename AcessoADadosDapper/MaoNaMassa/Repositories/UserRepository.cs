@@ -54,20 +54,21 @@ namespace MaoNaMassa.Repositories
             string userSql = @"
                 INSERT INTO
                     [User]
-                    OUTPUT INSERTED.[Id]
                 VALUES (@Name, @Email, @Password, @Bio, @Image, @Slug)";
             string roleSql = @"
                 INSERT INTO
                     [UserRole]
-                VALUES (1, @RoleId)";
+                VALUES (@UserId, @RoleId)";
 
-            _connection.ExecuteScalar<User>(userSql, new 
+            _connection.Query(userSql, new 
             { 
                 user.Name, user.Email, user.Password, user.Bio, user.Image, user.Slug 
             });
 
-            var UserId = new Repository<User>(_connection).GetAll().FirstOrDefault(x => x.Name == user.Name);
-            _connection.Query(roleSql, new {  RoleId });
+            var idUser = new Repository<User>(_connection).GetAll().FirstOrDefault(x => x.Name == user.Name);
+            // Console.WriteLine($"{idUser.Name} - {idUser.Id}");
+
+            _connection.Query(roleSql, new { UserId = idUser.Id, RoleId });
         }
     }
 }

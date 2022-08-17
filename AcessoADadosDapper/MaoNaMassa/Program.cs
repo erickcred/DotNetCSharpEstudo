@@ -15,8 +15,8 @@ namespace MaoNaMassa
             using (SqlConnection connection = new SqlConnection(Connection.connectionString))
             {
                 ReadUsers(connection);
-                CreateUserWithRoles(connection);
-                ReadUsers(connection);
+                // CreateUserWithRoles(connection);
+                // ReadUsers(connection);
                 // CreateUser(connection);
                 // ReadRoles(connection);
                 // ReadRole(connection);
@@ -100,11 +100,12 @@ namespace MaoNaMassa
         {
             foreach (User user in new UserRepository(connection).GetWithRolesAll())
             {
-                Console.WriteLine($"{user.Id}: {user.Name}");
+                Console.Write($"{user.Id}: {user.Name}");
                 foreach (var role in user.Roles)
                 {
                     Console.Write($", {role.Name}");
                 }
+                Console.WriteLine();
             }
         }
 
@@ -148,9 +149,9 @@ namespace MaoNaMassa
             {
                 Console.WriteLine($"{role.Id}: {role.Name}");
             }
-            // int id = int.Parse(Console.ReadLine());
+            int id = Convert.ToInt32(Console.ReadLine());
 
-            new UserRepository(connection).CreateWithRoles(user, 1);
+            new UserRepository(connection).CreateWithRoles(user, id);
         }
         
     }

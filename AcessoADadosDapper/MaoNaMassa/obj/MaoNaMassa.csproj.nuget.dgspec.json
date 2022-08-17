@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Estudo\\DotNetCSharpEstudo\\AcessoADadosDapper\\MaoNaMassa\\MaoNaMassa.csproj": {}
+    "/home/erick/Estudo/DotNetCSharpEstudo/AcessoADadosDapper/MaoNaMassa/MaoNaMassa.csproj": {}
   },
   "projects": {
-    "D:\\Estudo\\DotNetCSharpEstudo\\AcessoADadosDapper\\MaoNaMassa\\MaoNaMassa.csproj": {
+    "/home/erick/Estudo/DotNetCSharpEstudo/AcessoADadosDapper/MaoNaMassa/MaoNaMassa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Estudo\\DotNetCSharpEstudo\\AcessoADadosDapper\\MaoNaMassa\\MaoNaMassa.csproj",
+        "projectUniqueName": "/home/erick/Estudo/DotNetCSharpEstudo/AcessoADadosDapper/MaoNaMassa/MaoNaMassa.csproj",
         "projectName": "MaoNaMassa",
-        "projectPath": "D:\\Estudo\\DotNetCSharpEstudo\\AcessoADadosDapper\\MaoNaMassa\\MaoNaMassa.csproj",
-        "packagesPath": "C:\\Users\\erick\\.nuget\\packages\\",
-        "outputPath": "D:\\Estudo\\DotNetCSharpEstudo\\AcessoADadosDapper\\MaoNaMassa\\obj\\",
+        "projectPath": "/home/erick/Estudo/DotNetCSharpEstudo/AcessoADadosDapper/MaoNaMassa/MaoNaMassa.csproj",
+        "packagesPath": "/home/erick/.nuget/packages/",
+        "outputPath": "/home/erick/Estudo/DotNetCSharpEstudo/AcessoADadosDapper/MaoNaMassa/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\erick\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/erick/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +57,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -68,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
         }
       }
     }
